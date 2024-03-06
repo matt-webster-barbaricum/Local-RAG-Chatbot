@@ -19,7 +19,9 @@ pip install -r requirements.txt
 2.  Install LM Studio. Use the following link: https://lmstudio.ai/
 3.  Download some LLMs by searching and selecting from the LM studio search panel. I experimented with (1) llama-2-7b-chat.Q8_0.gguf and (2) mistral-7b-instruct-v0.2.Q6_K.gguf.
 4.  Run the LM Studio server. Accept all default options.
-5.  Create a vector database from PDF files by running the vector-db-create.py. Please specify the appropriate path for the PDF file.
-6.  Run qa-only.py. This will help you take care of any errors that may pop up.
-7. Run the conversational agent using the script in RAG-chatbot.py.
+5.  Copy your pdf files into ./pdfs
+6.  Review `config.toml` configuration file. Update the `qa_question` field to match your pdf information.
+7.  Create a vector database from your pdf files by running the vector-db-create.py.
+8.  Run qa-only.py. This will help you take care of any errors that may pop up.
+9.  Run the conversational agent using the script in RAG-chatbot.py.
    
